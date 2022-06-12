@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Résultat attendu = transformer une variable -->
+<body>
+  <script>
+
+    function addNumber(a, b) {
+      const sum = a + b
+      return sum;
+    }
+
+    function promptNumber(message) {
+      var promptedString = window.prompt(message);
+      return parseInt(promptedString)
+      // (parsInt) pouvoir changer le typre d'une valeur, d'abord la mettre dans une variable 
+      // et ensuite transformé la valeur (string) en chiffre (entier)
+    }
+
+    function show(toShow) {
+      console.log(toShow);
+    }
+
+    var numberPromptA = promptNumber("a = ");
+    // windows.prompt = faire apparaître une boîte de dialogue dans la fenêtre 
+
+    const b = window.prompt("b = ");
+    b = parseInt(b);
+
+    const aPlusB = addNumber(numberPromptA, b);
+
+    console.log(aPlusB);
+
+  </script>
+</body>

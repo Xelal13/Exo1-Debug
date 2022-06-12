@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- Résultat attendu = doit pouvoir lire tous les showArray -->
+<body>
+  <script>
+
+    function showArray(array) {
+      for (var i = 0; i < array.length; i++) {
+        console.log(array[i]);
+      }
+    }
+
+    showArray("abcef");
+    // string
+
+    // showArray([]);
+
+    showArray([1]);
+    // un nombre n'est pas un tableau, mettre des crochets "obligatoire"
+
+    showArray([[1, 2, 3, 4], [1, 2, 3, 4]]);
+
+    showArray(["abcdef", "ghijkl", "mnop"]);
+
+  </script>
+</body>
